@@ -21,36 +21,24 @@ export default {
     /*eslint 'no-console':0*/
     renderBarChart() {
       this.renderChart({
-        label: ['Nike', 'Adidas', 'Geen', 'Anders'],
+        labels: ['Nike', 'Adidas', 'Geen', 'Anders'],
         datasets: [{
-            label: 'Nike',
-            data: [7.636363636],
-            backgroundColor: 'rgba(226,20,45,0.55)',
-            borderColor: 'rgba(226,20,45,1)',
-            borderWidth: 1
-          },
-          {
-            label: 'Adidas',
-            data: [5.8],
-            backgroundColor: 'rgba(0,81,186,0.55)',
-            borderColor: 'rgba(0,81,186,1)',
-            borderWidth: 1
-          },
-          {
-            label: 'Geen',
-            data: [7.274193548],
-            backgroundColor: 'rgba(232,208,30,0.55)',
-            borderColor: 'rgba(232,208,30,1)',
-            borderWidth: 1
-          },
-          {
-            label: 'Anders',
-            data: [7.6],
-            backgroundColor: 'rgba(119,136,153,0.55)',
-            borderColor: 'rgba(119,136,153,1)',
-            borderWidth: 1
-          }
-        ]
+          data: ['7.636363636', '5.8', '7.274193548', '7.6'],
+          // label: this.label,
+          backgroundColor: [
+            'rgba(226,20,45,0.55)',
+            'rgba(0,81,186,0.55)',
+            'rgba(232,208,30,0.55)',
+            'rgba(119,136,153,0.55)'
+          ],
+          borderColor: [
+            'rgba(226,20,45,1)',
+            'rgba(0,81,186,1)',
+            'rgba(232,208,30,1)',
+            'rgba(119,136,153,1)'
+          ],
+          borderWidth: 1
+        }]
       }, {
         responsive: true,
         title: {
@@ -84,8 +72,9 @@ export default {
             }
           }]
         },
-        labels: {
-          display: true
+        legend: {
+          display: false
+
         }
       })
     }
