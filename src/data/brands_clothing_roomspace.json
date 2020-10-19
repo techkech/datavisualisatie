@@ -1,0 +1,498 @@
+const adidasData = [{
+    "ID/Persoon": 1,
+    "Lievelingsmerk": "Adidas",
+    "Slaapkamergrootte": 11,
+    "Kledingstukken": 78
+  },
+  {
+    "ID/Persoon": 2,
+    "Lievelingsmerk": "Adidas",
+    "Slaapkamergrootte": 16,
+    "Kledingstukken": 20
+  },
+  {
+    "ID/Persoon": 3,
+    "Lievelingsmerk": "Adidas",
+    "Slaapkamergrootte": 22,
+    "Kledingstukken": 80
+  },
+  {
+    "ID/Persoon": 4,
+    "Lievelingsmerk": "Adidas",
+    "Slaapkamergrootte": 24,
+    "Kledingstukken": 50
+  },
+  {
+    "ID/Persoon": 5,
+    "Lievelingsmerk": "Adidas",
+    "Slaapkamergrootte": 28,
+    "Kledingstukken": 25
+  }
+]
+
+const andersData = [{
+    "ID/Persoon": 6,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 7,
+    "Kledingstukken": 40
+  },
+  {
+    "ID/Persoon": 7,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 7,
+    "Kledingstukken": 40
+  },
+  {
+    "ID/Persoon": 8,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 8,
+    "Kledingstukken": 25
+  },
+  {
+    "ID/Persoon": 9,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 9,
+    "Kledingstukken": 20
+  },
+  {
+    "ID/Persoon": 10,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 10,
+    "Kledingstukken": 60
+  },
+  {
+    "ID/Persoon": 12,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 10,
+    "Kledingstukken": 80
+  },
+  {
+    "ID/Persoon": 13,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 10,
+    "Kledingstukken": 130
+  },
+  {
+    "ID/Persoon": 14,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 10,
+    "Kledingstukken": 40
+  },
+  {
+    "ID/Persoon": 15,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 11.5,
+    "Kledingstukken": 80
+  },
+  {
+    "ID/Persoon": 16,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 12,
+    "Kledingstukken": 40
+  },
+  {
+    "ID/Persoon": 17,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 12,
+    "Kledingstukken": 70
+  },
+  {
+    "ID/Persoon": 18,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 12,
+    "Kledingstukken": 100
+  },
+  {
+    "ID/Persoon": 19,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 12,
+    "Kledingstukken": 20
+  },
+  {
+    "ID/Persoon": 20,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 12,
+    "Kledingstukken": 25
+  },
+  {
+    "ID/Persoon": 21,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 12,
+    "Kledingstukken": 60
+  },
+  {
+    "ID/Persoon": 22,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 13,
+    "Kledingstukken": 125
+  },
+  {
+    "ID/Persoon": 23,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 14,
+    "Kledingstukken": 45
+  },
+  {
+    "ID/Persoon": 24,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 14,
+    "Kledingstukken": 200
+  },
+  {
+    "ID/Persoon": 25,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 14,
+    "Kledingstukken": 120
+  },
+  {
+    "ID/Persoon": 26,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 15,
+    "Kledingstukken": 120
+  },
+  {
+    "ID/Persoon": 27,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 15,
+    "Kledingstukken": 40
+  },
+  {
+    "ID/Persoon": 28,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 15,
+    "Kledingstukken": 45
+  },
+  {
+    "ID/Persoon": 29,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 15,
+    "Kledingstukken": 200
+  },
+  {
+    "ID/Persoon": 30,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 15,
+    "Kledingstukken": 150
+  },
+  {
+    "ID/Persoon": 31,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 15,
+    "Kledingstukken": 75
+  },
+  {
+    "ID/Persoon": 32,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 15.6,
+    "Kledingstukken": 70
+  },
+  {
+    "ID/Persoon": 33,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 16,
+    "Kledingstukken": 30
+  },
+  {
+    "ID/Persoon": 34,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 16,
+    "Kledingstukken": 40
+  },
+  {
+    "ID/Persoon": 35,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 16,
+    "Kledingstukken": 100
+  },
+  {
+    "ID/Persoon": 36,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 17,
+    "Kledingstukken": 100
+  },
+  {
+    "ID/Persoon": 37,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 17.5,
+    "Kledingstukken": 275
+  },
+  {
+    "ID/Persoon": 38,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 17.6,
+    "Kledingstukken": 25
+  },
+  {
+    "ID/Persoon": 39,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 18,
+    "Kledingstukken": 20
+  },
+  {
+    "ID/Persoon": 40,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 18,
+    "Kledingstukken": 200
+  },
+  {
+    "ID/Persoon": 41,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 18,
+    "Kledingstukken": 80
+  },
+  {
+    "ID/Persoon": 42,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 20,
+    "Kledingstukken": 150
+  },
+  {
+    "ID/Persoon": 43,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 20,
+    "Kledingstukken": 10
+  },
+  {
+    "ID/Persoon": 44,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 20,
+    "Kledingstukken": 30
+  },
+  {
+    "ID/Persoon": 45,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 20,
+    "Kledingstukken": 60
+  },
+  {
+    "ID/Persoon": 46,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 20,
+    "Kledingstukken": 60
+  },
+  {
+    "ID/Persoon": 47,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 20,
+    "Kledingstukken": 200
+  },
+  {
+    "ID/Persoon": 48,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 20,
+    "Kledingstukken": 100
+  },
+  {
+    "ID/Persoon": 49,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 20,
+    "Kledingstukken": 80
+  },
+  {
+    "ID/Persoon": 50,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 20,
+    "Kledingstukken": 90
+  },
+  {
+    "ID/Persoon": 51,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 22,
+    "Kledingstukken": 200
+  },
+  {
+    "ID/Persoon": 52,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 22,
+    "Kledingstukken": 100
+  },
+  {
+    "ID/Persoon": 53,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 22.5,
+    "Kledingstukken": 70
+  },
+  {
+    "ID/Persoon": 54,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 22.5,
+    "Kledingstukken": 89
+  },
+  {
+    "ID/Persoon": 55,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 24,
+    "Kledingstukken": 100
+  },
+  {
+    "ID/Persoon": 56,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 24,
+    "Kledingstukken": 40
+  },
+  {
+    "ID/Persoon": 57,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 24,
+    "Kledingstukken": 100
+  },
+  {
+    "ID/Persoon": 59,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 25,
+    "Kledingstukken": 140
+  },
+  {
+    "ID/Persoon": 60,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 25,
+    "Kledingstukken": 150
+  },
+  {
+    "ID/Persoon": 61,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 25,
+    "Kledingstukken": 60
+  },
+  {
+    "ID/Persoon": 62,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 26,
+    "Kledingstukken": 30
+  },
+  {
+    "ID/Persoon": 63,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 32,
+    "Kledingstukken": 300
+  },
+  {
+    "ID/Persoon": 64,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 35,
+    "Kledingstukken": 70
+  },
+  {
+    "ID/Persoon": 65,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 36,
+    "Kledingstukken": 60
+  },
+  {
+    "ID/Persoon": 66,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 50,
+    "Kledingstukken": 200
+  },
+  {
+    "ID/Persoon": 68,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 52,
+    "Kledingstukken": 60
+  },
+  {
+    "ID/Persoon": 69,
+    "Lievelingsmerk": "Anders",
+    "Slaapkamergrootte": 56,
+    "Kledingstukken": 300
+  }
+]
+
+const geenData = [{
+    "ID/Persoon": 70,
+    "Lievelingsmerk": "Geen",
+    "Slaapkamergrootte": 7.4,
+    "Kledingstukken": 60
+  },
+  {
+    "ID/Persoon": 71,
+    "Lievelingsmerk": "Geen",
+    "Slaapkamergrootte": 10,
+    "Kledingstukken": 50
+  },
+  {
+    "ID/Persoon": 72,
+    "Lievelingsmerk": "Geen",
+    "Slaapkamergrootte": 19,
+    "Kledingstukken": 100
+  },
+  {
+    "ID/Persoon": 73,
+    "Lievelingsmerk": "Geen",
+    "Slaapkamergrootte": 20,
+    "Kledingstukken": 90
+  },
+  {
+    "ID/Persoon": 74,
+    "Lievelingsmerk": "Geen",
+    "Slaapkamergrootte": 40,
+    "Kledingstukken": 100
+  }
+]
+const nikeData = [{
+    "ID/Persoon": 75,
+    "Lievelingsmerk": "Nike",
+    "Slaapkamergrootte": 8,
+    "Kledingstukken": 100
+  },
+  {
+    "ID/Persoon": 76,
+    "Lievelingsmerk": "Nike",
+    "Slaapkamergrootte": 19,
+    "Kledingstukken": 200
+  },
+  {
+    "ID/Persoon": 77,
+    "Lievelingsmerk": "Nike",
+    "Slaapkamergrootte": 20,
+    "Kledingstukken": 40
+  },
+  {
+    "ID/Persoon": 78,
+    "Lievelingsmerk": "Nike",
+    "Slaapkamergrootte": 20,
+    "Kledingstukken": 50
+  },
+  {
+    "ID/Persoon": 79,
+    "Lievelingsmerk": "Nike",
+    "Slaapkamergrootte": 20,
+    "Kledingstukken": 50
+  },
+  {
+    "ID/Persoon": 80,
+    "Lievelingsmerk": "Nike",
+    "Slaapkamergrootte": 23,
+    "Kledingstukken": 40
+  },
+  {
+    "ID/Persoon": 81,
+    "Lievelingsmerk": "Nike",
+    "Slaapkamergrootte": 24,
+    "Kledingstukken": 20
+  },
+  {
+    "ID/Persoon": 82,
+    "Lievelingsmerk": "Nike",
+    "Slaapkamergrootte": 32,
+    "Kledingstukken": 80
+  },
+  {
+    "ID/Persoon": 83,
+    "Lievelingsmerk": "Nike",
+    "Slaapkamergrootte": 48,
+    "Kledingstukken": 100
+  },
+  {
+    "ID/Persoon": 84,
+    "Lievelingsmerk": "Nike",
+    "Slaapkamergrootte": 21,
+    "Kledingstukken": 30
+  },
+  {
+    "ID/Persoon": 85,
+    "Lievelingsmerk": "Nike",
+    "Slaapkamergrootte": 25,
+    "Kledingstukken": 60
+  }
+]
