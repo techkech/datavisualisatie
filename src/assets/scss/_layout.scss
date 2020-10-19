@@ -168,3 +168,8 @@ article {
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
+
+.scatter-chart, .bar-chart {
+  min-width: 50vw;
+  min-height: 50vh;
+}

@@ -1,7 +1,7 @@
 <template>
 <section :id="category">
   <h2 class="nikeHeader">{{ title }}</h2>
-  <div>
+  <div class="chart-ding">
     <pie-chart title="Favoriete merk onder ID20-studenten" />
   </div>
   <article id="stats-1">
@@ -15,7 +15,7 @@
   <transition name="fade">
     <article id="stats-2" v-if="showStats2">
       <h3>meer stats!</h3>
-      <div>
+      <div class="chart-ding">
         <line-chart title="Favoriete merk onder ID20-studenten" />
       </div>
       <a class="nikeButton1" v-on:click="[showStats3 = !showStats3, reverseButton2()]" href="#" v-scroll-to="'#stats-3'">{{ button2 }}</a>
@@ -24,7 +24,7 @@
   <transition name="fade">
     <article v-if="showStats3">
       <h3 id="stats-3">Verhouding kleding/space</h3>
-      <div>
+      <div class="scatter-chart">
         <scatter-chart title="Verhouding kleding/kastruimte ID20-studenten" />
       </div>
       <a class="nikeButton1" v-on:click="[showStats4 = !showStats4, reverseButton3()]" href="#" v-scroll-to="'#stats-4'">{{ button3 }}</a>
@@ -34,7 +34,7 @@
     <article id="stats-4" v-if="showStats4">
       <h3>Maakt een merk gelukkig?</h3>
       <p>Hierbij is gekeken naar het cijfer dat de student met dit merk antwoordde op de vraag "Hoe tevreden ben je met je leven?". Het betreft het gemiddelde antwoord, berekend over de responses binnen het desbetreffende merk.</p>
-      <div>
+      <div class="bar-chart">
         <bar-chart title="Happiness-rating per favoriet merk" />
       </div>
     </article>
@@ -63,7 +63,7 @@ export default {
       showStats3: true,
       showStats4: true,
       button1: "Let's find out!",
-      button2: "meer dingen",
+      button2: "Ik wil meer weten",
       button3: "nog meer dingen"
     };
   },
@@ -78,10 +78,10 @@ export default {
       }
     },
     reverseButton2() {
-      if (this.button2 === "meer dingen") {
+      if (this.button2 === "Ik wil meer weten") {
         this.button2 = this.button2.replace(/meer/i, 'minder');
         return
-      } else if (this.button2 === "minder dingen") {
+      } else if (this.button2 === "Ik wil minder weten") {
         this.button2 = this.button2.replace(/minder/i, 'meer');
         return
       }
