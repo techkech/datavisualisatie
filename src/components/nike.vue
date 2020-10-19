@@ -32,9 +32,10 @@
   </transition>
   <transition name="fade">
     <article id="stats-4" v-if="showStats4">
-      <h3>nog veel meer stats!</h3>
+      <h3>Maakt een merk gelukkig?</h3>
+      <p>Hierbij is gekeken naar het cijfer dat de student met dit merk antwoordde op de vraag "Hoe tevreden ben je met je leven?". Het betreft het gemiddelde antwoord, berekend over de responses binnen het desbetreffende merk.</p>
       <div>
-        <bar-chart title="Favoriete merk onder ID20-studenten" />
+        <bar-chart title="Happiness-rating per favoriet merk" />
       </div>
     </article>
   </transition>
