@@ -24,7 +24,7 @@ export default {
         labels: ['Dataviz/ID', 'Frontend', 'Design Research', 'UX', 'Interaction Design', 'Visual Design'],
             datasets: [{
               label: 'Nike',
-                data: [25, 47, 6, 33, 15, 53],
+                data: [1, 5, 0, 6, 6, 7],
           backgroundColor: [
             'rgba(54, 162, 235, 0.2)'
           ],
@@ -33,7 +33,7 @@ export default {
           ],
           borderWidth: 1
         }, {      label: 'Adidas',
-            data: [17, 35, 7, 38, 22, 55],
+            data: [1, 3, 1, 2, 3, 6],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)'
       ],
@@ -56,8 +56,9 @@ export default {
                display: false
            },
            ticks: {
-               suggestedMin: 50,
-               suggestedMax: 100
+               suggestedMin: 0,
+               suggestedMax: 8,
+               stepSize: 1
            }
        }
       })

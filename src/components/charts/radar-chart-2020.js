@@ -56,8 +56,10 @@ export default {
                display: false
            },
            ticks: {
-               suggestedMin: 50,
-               suggestedMax: 100
+               // display: false,
+               suggestedMin: 0,
+               suggestedMax: 8,
+               stepSize: 1
            }
        }
       })
