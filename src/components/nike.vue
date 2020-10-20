@@ -72,9 +72,9 @@ export default {
   },
   data() {
     return {
-      showStats2: true,
-      showStats3: true,
-      showStats4: true,
+        showStats2: false,
+        showStats3: false,
+        showStats4: false,
       button1: "Let's find out!",
       button2: "Ik wil meer weten",
       button3: "nog meer dingen"
