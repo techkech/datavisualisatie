@@ -16,7 +16,11 @@
     <article id="stats-2" v-if="showStats2">
       <h3>meer stats!</h3>
       <div class="chart-ding">
-        <radar-chart title="CMD-voorkeuren" />
+        <radar-chart-2019 title="CMD-voorkeuren 2019" />
+        <radar-chart-2020 title="CMD-voorkeuren 2020" />
+      </div>
+      <div class="chart-ding">
+        <radar-chart-amount title="Favoriete merken per jaar" />
       </div>
       <div class="chart-ding">
         <line-chart title="Favoriete merk onder ID20-studenten" />
@@ -50,7 +54,9 @@
 import BarChart from './charts/bar-chart.js'
 import PieChart from './charts/pie-chart.js'
 import LineChart from './charts/line-chart.js'
-import RadarChart from './charts/radar-chart.js'
+import RadarChart2019 from './charts/radar-chart-2019.js'
+import RadarChart2020 from './charts/radar-chart-2020.js'
+import RadarChartAmount from './charts/radar-chart-amount.js'
 import ScatterChart from './charts/scatterplot-chart.js'
 
 export default {
@@ -59,7 +65,9 @@ export default {
     BarChart,
     PieChart,
     LineChart,
-    RadarChart,
+    RadarChart2019,
+    RadarChart2020,
+    RadarChartAmount,
     ScatterChart
   },
   data() {

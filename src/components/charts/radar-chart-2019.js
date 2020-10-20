@@ -23,7 +23,7 @@ export default {
       this.renderChart({
         labels: ['Dataviz/ID', 'Frontend', 'Design Research', 'UX', 'Interaction Design', 'Visual Design'],
             datasets: [{
-              label: '2020',
+              label: 'Nike',
                 data: [25, 47, 6, 33, 15, 53],
           backgroundColor: [
             'rgba(54, 162, 235, 0.2)'
@@ -32,7 +32,7 @@ export default {
             'rgba(54, 162, 235, 1)'
           ],
           borderWidth: 1
-        }, {      label: '2019',
+        }, {      label: 'Adidas',
             data: [17, 35, 7, 38, 22, 55],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)'
