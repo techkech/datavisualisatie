@@ -2,7 +2,7 @@
 <main id="home">
   <h1>datavisualisatie id</h1>
   <section class="active">
-    <h2>Supermegabelangrijke vraag. Waar gaat je hart naar uit?</h2>
+    <h2>Waar gaat je voorkeur naar uit?</h2>
     <SwitchBetween class="choices" @nike-click="choice = 'nike'" @adidas-click="choice = 'adidas'" @idgaf-click="choice = 'idgaf'" />
 
     <div v-if="choice === 'nike'">

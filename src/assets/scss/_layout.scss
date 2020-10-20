@@ -55,7 +55,7 @@ section {
 }
 
 article {
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 span {}
@@ -70,6 +70,10 @@ rect {
 
 g {
   fill-opacity: 1;
+}
+
+p {
+  max-width: 50vw;
 }
 
 button,
@@ -163,4 +167,9 @@ article {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+
+.scatter-chart, .bar-chart {
+  min-width: 50vw;
+  min-height: 50vh;
 }

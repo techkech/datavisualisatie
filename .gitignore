@@ -10,3 +10,4 @@ _site/assets/style.css.map
 docs/assets/index.css.map
 src/js/charts
 src/js/app.js
+src/pages/info.vue
